@@ -1,8 +1,8 @@
-![logo](https://docsify.js.org/_media/icon.svg)
+![logo](_media/logo.svg)
 
-# Spring Security 从零开始的异世界
-### 从零开始学 Spring Security
-> 以Spring Security为主题，开启学习之旅，从基本案例到实战案例
+# Qiqban 笔记
+### 反复运用的必是精华，尝试、积累、提炼
+> 以Java为第一语言，逐步提升办公效率
 
 [Github](https://github.com/qiqban/notes)
 [Get Started](README.md)

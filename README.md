@@ -1,2 +1,2 @@
-# test.github.io
-try github pages
+# notes.github.io
+学习笔记

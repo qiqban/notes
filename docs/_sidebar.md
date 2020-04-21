@@ -1,2 +1,3 @@
-- [基础]()
-  - [虚拟机](basic/JVM.md)
+- [首页](README.md)
+- [基础](基础/README.md)
+	- [JVM](基础/JVM.md)

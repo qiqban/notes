@@ -23,7 +23,7 @@
 
 ## 内存模型
 
-![JVM内存模型](JVM-MEM.svg)
+![JVM内存模型](_media/JVM-MEM.svg)
 
 > 方法区 -> 永久代 -> 元数据区
 

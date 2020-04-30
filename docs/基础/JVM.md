@@ -53,5 +53,18 @@
 - JVM收集器参数
 
 ## 内存参数
+
+- -Xms 堆初始值
+- -Xmx 堆最大值 与 -Xms通常设置为相等
+- -Xmn 年轻代的大小 通常堆的一半 相同的NewSize与MaxNewSize
+  - -XX:NewSize 年轻代初始值
+  - -XX:MaxNewSize 年轻代最大值
+- -Xss 每个线程的栈大小 32位默认320K 64位默认1M
+- -XX:PermSize=128m 永久代最小值
+- -XX:MaxPermSize=128m 永久代最大值
+- -XX:+PrintGCDetails 打印每次GC的详情
+- -XX:MetaspaceSize=128m 元数据区初始值
+- -XX:MaxMetaspaceSize=320m 元数据区最大值
+
 ## 调优
 ## 内存泄露与溢出

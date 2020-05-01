@@ -1,0 +1,34 @@
+- cloud Hoxton.SR4
+- boot 2.2.1.RELEASE
+- cloud alibaba 2.1.0.RELEASE
+- Java 8
+- Maven 3.5以上
+- Mysql 5.7以上
+
+
+Cloud现状
+- 注册中心
+  - ~~Eureka~~
+  - Zookeeper
+  - Consul
+  - Nacos
+- 调度服务
+  - Ribbon
+  - LoadBalancer
+- 调用客户端
+  - Feign
+  - OpenFeign
+- 服务降级
+  - ~~Hystrix~~
+  - resilience4j
+  - sentinel
+- 网关服务
+  - ~~Zuul~~
+  - (Zuul2)
+  - Gateway
+- 配置服务
+  - ~~Config~~
+  - Nacos
+- 总线服务
+  - Bus
+  - Nacos

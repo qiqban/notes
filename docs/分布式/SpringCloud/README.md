@@ -12,10 +12,9 @@ Cloud现状
   - Zookeeper
   - Consul
   - Nacos
-- 调度服务
-  - Ribbon
-  - LoadBalancer
 - 调用客户端
+  - RestTemplate+Ribbon
+  - LoadBalancer
   - Feign
   - OpenFeign
 - 服务降级
@@ -32,3 +31,11 @@ Cloud现状
 - 总线服务
   - Bus
   - Nacos
+- 分布式事务
+  - Seata
+
+- Eureka
+- Consul
+- Ribbon
+- OpenFeign
+- Hystrix

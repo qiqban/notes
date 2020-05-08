@@ -1,0 +1,21 @@
+## 启动过程
+
+- 实例化 SpringApplication
+  - resourceLoader = null
+  - primarySources = 启动类.class
+  - webApplicationType = SERVLET (NONE,REACTIVE)
+	- setInitializers((Collection) getSpringFactoriesInstances(ApplicationContextInitializer.class));
+	- setListeners((Collection) getSpringFactoriesInstances(ApplicationListener.class));
+  - mainApplicationClass = 启动类.class
+- 运行
+  - stop watch 秒表 stopWatch.start()
+  - 设置 java.awt.headless 默认true
+  - 创建监听器
+  - 初始化参数
+  - 根据监听器和参数准备Spring环境
+  - 设置 spring.beaninfo.ignore 默认true
+  - 创建banner 默认SpringBoot的banner，可以使用banner.txt覆盖
+  - createApplicationContext 应用上下文
+  - 创建Spring工厂实例
+  - 准备应用上下文
+  - 刷新应用上下文

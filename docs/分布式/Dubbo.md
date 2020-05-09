@@ -189,7 +189,12 @@ dubbo.reference.cluster=failsafe
 ### 服务暴露
 
 - ServiceBean.afterPropertiesSet setter所有配置信息
+- ServiceBean.onApplicationEvent 暴露服务
+  - ServiceConfig.doExportProtocol
+    - DubboProtocol.export
 
 ### 服务引用
+
+- 
 
 ### 服务调用

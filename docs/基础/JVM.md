@@ -39,17 +39,23 @@
     - 复制法copying
     - 标记清除 mark-sweep
     - 标记整理 mark-compact
-    - 分代收集
-  - 收集器
+  - 收集器 （分代收集）
     - 年轻代
-      - Serial
-      - ParNew
-      - Pallel Canvenge
+      - Serial 单线程复制法 (client默认)
+      - ParNew 多线程复制法 (server默认)
+      - Pallel Canvenge 多线程复制法、吞吐量
     - 老年代
-      - Serial Old
-      - Pallel Old
-      - CMS
-    - G1
+      - Serial Old 单线程标记整理法 (client默认)
+      - Pallel Old 多线程标记整理法
+      - CMS 多线程标记清除法 (Concurrent Mark Sweep) -> SerialOld
+    - G1 (Garbage first) 堆6G以上延迟0.5s以下使用
+      - 并发
+      - 标记整理
+      - 分区回收
+    - FullGC
+      - 老年代的平均新增>目前可用空间
+      - 方法区满了
+      - 永久带满了, 导致卸载Class Method元数据信息
 - JVM收集器参数
 
 ## 内存参数
